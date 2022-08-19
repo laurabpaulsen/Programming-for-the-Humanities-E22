@@ -1,4 +1,4 @@
-# Programming for the Humanities E21 #
+# Programming for the Humanities E22 #
 
 This repository contains all of the code and data related to the Fall 2022 (E22) course _Programming for the Humanities_ which is an [internationalisation elective](https://kursuskatalog.au.dk/da/course/114061/Programming-for-the-Humanities) at [Aarhus University](https://international.au.dk/), [Faculty of Arts](https://arts.au.dk/en/). The course is taught by [Center for Humanities Computing Aarhus](https://chcaa.io/#/), any inquiries can be addressed to [CHCAA](https://chcaa.zendesk.com/hc/en-us/requests/new)
 
