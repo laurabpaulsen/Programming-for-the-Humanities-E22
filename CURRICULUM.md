@@ -4,8 +4,8 @@
 
 Each lesson consists of two elements:
 
-1. Lecture, introduces a programming topic through a short presentation followed by a code-along session
-2. Coding Café, are used for additional programming topics not directly related to Python (e.g., version control, bash scripting), research talks, and excercises/assignments.
+1. _Lecture_: introduces a programming topic through a short presentation followed by a code-along session
+2. _Coding Café_: are used for additional programming topics not directly related to Python (e.g., version control, bash scripting), research talks, and excercises/assignments.
 
 ---
 
@@ -29,7 +29,7 @@ Continues lesson 1 with a code-along
 
 ### Lesson 2: Control Flow
 
-__Time__ Monday, , 0800-1000 (1200 w. café)  
+__Time__ Monday, September 5 , 0800-1000 (1200 w. café)  
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 
@@ -46,7 +46,7 @@ In this coding café, you will solve [coding challenges](https://github.com/CHCA
 
 ### Lesson 3: Functions and Modular Programming ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)  
+__Time__ Monday, September 12 , 0800-1000 (1200 w. café)  
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Functions are bundles of organized and reusable code that run when called and require data and parameter (in most cases) that are used to control how a program's code executes. This lesson teaches modular programming focusing on the use of functions. In modular programming, we split code into seperate parts (i.e., modules) that are stored in seperate source files and can be reused across your projects.
@@ -69,7 +69,7 @@ In this coding café, we continue with the Unix shell and terminal focusing on a
 
 ### Lesson 4: Lists and Dictionaries ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)  
+__Time__ Monday, September 19, 0800-1000 (1200 w. café)  
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Data type is an important concept in programming. Variables store data in different types that have type-specific methods associated with them. Python have multiple built-in data types, you have used simple data types like `str`, `int`, and `float` in the previous lessons; in this lesson we look at container-like data types that can be used to store and manipulate simple data types.
@@ -86,7 +86,7 @@ In this coding café, we continue with the Unix shell and terminal focusing on a
 
 ### Lesson 5: String Manipulation ####
 
-__Time__ Monday, , 0800-1000 (1200 w. café)  
+__Time__ Monday, September 26, 0800-1000 (1200 w. café)  
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 A string is a sequence of characters (character is a symbol). In Python 3, as in many other programming languages, strings, data type `str`, are arrays of bytes that represent unicode characters. In this lesson, we will look at string manipulation, which is the process of changing, parsing, splicing, pasting, or analyzing strings.
@@ -105,7 +105,7 @@ A string is a sequence of characters (character is a symbol). In Python 3, as in
 
 ### Lesson 6: Formats for Representing Structured Data (CSV and JSONS)
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, October 3, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 In this lesson will cover how to work with CSV files and JSON data in Python.
@@ -126,7 +126,7 @@ In this coding café we will make a Horoscope Program and use the dataset `horos
 
 ### Lesson 7: Classes and Object-Oriented Programming ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, October 10, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Object oriented programming (OOP) is a programming paradigm used to structure a program into bundles of related properties and behaviors into individual objects. Python classes provide all the standard features of OOP (inheritance mechanism, derived classes that override methods of base class, method call of base class). This lesson will teach you how to use OOP in Python to write a strategic code base that can be used and re-used across multiple projects.
@@ -144,7 +144,7 @@ Object oriented programming (OOP) is a programming paradigm used to structure a 
 
 ### Lesson 8: Classes and Object-Oriented Programming ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, October 24, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Object oriented programming (OOP) is a programming paradigm used to structure a program into bundles of related properties and behaviors into individual objects. Python classes provide all the standard features of OOP (inheritance mechanism, derived classes that override methods of base class, method call of base class). This lesson will teach you how to use OOP in Python to write a strategic code base that can be used and re-used across multiple projects.
@@ -163,7 +163,7 @@ Object oriented programming (OOP) is a programming paradigm used to structure a 
 
 ### Lesson 9: Web Scraping
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, October 31, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
@@ -175,7 +175,7 @@ __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-
 
 ### Lesson 10: Information Visualization
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, November 7, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Exploration and communication of data through a visual medium is an essential tool of research. This lesson will focus on the use of `matplotlib` to efficiently explore and communicate research results. `Matplotlib` is a comprehensive library for creating static, animated, and interactive visualizations in Python.
@@ -199,7 +199,7 @@ Tufte, & R, E. (2001). The Visual Display of Quantitative Information (2nd editi
 
 ### Lesson 11: Just a Machine the Learns - Introduction to Machine Learning and AI ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)   
+__Time__ Monday, November 14 , 0800-1000 (1200 w. café)   
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Machine learning is an approach to programming that use data and learning systems to train algorithms (instead of specifying discrete steps in a programming space). This lesson is predominantly theoretical and will explain learning methods in machine learning as well as challenges such as black-box models and parity issues.
@@ -228,7 +228,7 @@ Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](https://
 
 ### Lesson 12: Supervised Machine Learning 1 ###
 
-__Time__ Monday, , 0800-1000 (1200 w. café)
+__Time__ Monday, November 21, 0800-1000 (1200 w. café)
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
@@ -243,7 +243,7 @@ __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-
 
 ### Lesson 13: Supervised Machine Learning ###
 
-__Time__ Monday, , 0800-1000
+__Time__ Monday, November 28, 0800-1000
 __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
