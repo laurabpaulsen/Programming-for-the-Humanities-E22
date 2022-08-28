@@ -18,7 +18,7 @@ $ source venv/bin/activate
 Clone repository and install requirements
 
 ```bash
-$ git clone https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21.git
+$ git clone https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22.git
 $ pip3 install -r requirements.txt
 ```
 
