@@ -239,7 +239,7 @@ Another shortcut is the dash (`-`) character. `cd` will translate `-` into the p
 
 The difference between `cd ..` and `cd -` is that the former brings you up, while the latter brings you back.
 
-## ## Lesson 1.2: Python as a Calculator ##
+## Lesson 1.2: Python as a Calculator ##
  
 * entering command in the interacitve shell/Read-Evaluate-Print Loop
 * REPL allows line-by-line execution
