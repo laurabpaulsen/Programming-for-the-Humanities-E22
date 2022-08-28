@@ -34,14 +34,15 @@ This repository has the following directory structure:
 .
 ├── assignments
 ├── CURRICULUM.md
-├── dat # data for exercises
-├── lessons # thematic lessons in md 
+├── dat # data for exercises and assignments
+├── doc # relevant documents
+├── examples # examples notebook
+├── exercises # tasks for code cafés
+├── lessons # lecture lessons in md 
 ├── LICENSE.md
-├── reading # reading (not Sweigart)
 ├── README.md
 ├── slides # slides from class in pdf
 └── src # py code snippets
-
 ```
 
 ## Course overview and readings
