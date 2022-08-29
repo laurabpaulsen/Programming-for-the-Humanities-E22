@@ -1,10 +1,10 @@
 ## Lesson 1.1 File system ##
 
-In order for Python/JupyterLab to use  to use certain files you need to direct it to where they can find them. This means, you need to know how to navigate your file system. Therefore it is important that you understand how your computer is organised.
+In order for Python to use  to use certain files you need to direct it to where they can find them. This means, you need to know how to navigate your file system. Therefore it is important that you understand how your computer is organised.
 
 The part of the operating system responsible for managing files and directories is called the _file system_. It organizes our data into files, which hold information, and directories (also called ‘folders’), which hold files or other directories.
 
-Several commands are frequently used to create, inspect, rename, and delete files and directories. To start exploring them, we’ll go to a Terminal from the JypyterLab launcher.
+Several commands are frequently used to create, inspect, rename, and delete files and directories. To start exploring them, we’ll go to a Terminal application.
 
 First, let’s find out where we are by running a command called `pwd` (which stands for 'print working directory'). Directories are like places — at any time while we are using the shell, we are in exactly one place called our current working directory. Commands mostly read and write files in the current working directory, i.e. 'here', so knowing where you are before running a command is important. `pwd` shows you where you are:
 
