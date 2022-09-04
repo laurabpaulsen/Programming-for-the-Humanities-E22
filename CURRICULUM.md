@@ -17,9 +17,9 @@ __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-
 
 Introduces the imperative and procedural programming paradigms with Python. Topics included are basic math operators, variable assignment, PEP8, basic error handling.
 
-#### Coding Café: Basic Python ####
+#### Coding Café: Coding Challenges ####
 
-Continues lesson 1 with a code-along
+In this coding café, you will solve [coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_01.md) about basic Python syntax.
 
 ##### Reading #####
 
@@ -35,9 +35,9 @@ __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-
 
 Introduces how to regulate the order in which a Python program's code executes. In programming, control flow is regulated by conditional statements, loops and function calls.
 
-#### Coding Café: Coding challenges ####
+#### Coding Café: Coding Challenges ####
 
-In this coding café, you will solve [coding challenges]() about control flow in groups.  
+In this coding café, you will solve [coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_02.md) about control flow in groups.  
 ##### Reading #####
 
 * Sweigart 2019, chp 2: [Flow Control](https://automatetheboringstuff.com/2e/chapter2/)
@@ -72,7 +72,7 @@ __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-
 
 Data type is an important concept in programming. Variables store data in different types that have type-specific methods associated with them. Python have multiple built-in data types, you have used simple data types like `str`, `int`, and `float` in the previous lessons; in this lesson we look at container-like data types that can be used to store and manipulate simple data types.
 
-#### Coding Café: Basic Unix (Contd)
+#### Coding Café: Coding Challenges
 
 In this coding café, you will solve [coding challenges]() about container data structures in groups.
 
