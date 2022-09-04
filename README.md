@@ -39,6 +39,7 @@ This repository has the following directory structure:
 ├── examples # examples notebook
 ├── exercises # tasks for code cafés
 ├── lessons # lecture lessons in md 
+├── reading # readings for lectures
 ├── LICENSE.md
 ├── README.md
 ├── slides # slides from class in pdf
