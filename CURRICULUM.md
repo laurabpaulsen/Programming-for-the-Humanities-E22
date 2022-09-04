@@ -12,7 +12,7 @@ Each lesson consists of two elements:
 ### Lesson 1: File Management and Interactive Programming ###
 
 __Time__ Monday, August 29, 0800-1000 (1200 w. café)  
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 
 Introduces the imperative and procedural programming paradigms with Python. Topics included are basic math operators, variable assignment, PEP8, basic error handling.
@@ -30,14 +30,14 @@ Continues lesson 1 with a code-along
 ### Lesson 2: Control Flow
 
 __Time__ Monday, September 5 , 0800-1000 (1200 w. café)  
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 
 Introduces how to regulate the order in which a Python program's code executes. In programming, control flow is regulated by conditional statements, loops and function calls.
 
 #### Coding Café: Coding challenges ####
 
-In this coding café, you will solve [coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/exercises/excr_02_control_flow.md) about control flow in groups of two or four. Be sure that you can answer the [basic python challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/exercises/excr_01_basic_python.md) before you start.  
+In this coding café, you will solve [coding challenges]() about control flow in groups.  
 ##### Reading #####
 
 * Sweigart 2019, chp 2: [Flow Control](https://automatetheboringstuff.com/2e/chapter2/)
@@ -47,15 +47,13 @@ In this coding café, you will solve [coding challenges](https://github.com/CHCA
 ### Lesson 3: Functions and Modular Programming ###
 
 __Time__ Monday, September 12 , 0800-1000 (1200 w. café)  
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Functions are bundles of organized and reusable code that run when called and require data and parameter (in most cases) that are used to control how a program's code executes. This lesson teaches modular programming focusing on the use of functions. In modular programming, we split code into seperate parts (i.e., modules) that are stored in seperate source files and can be reused across your projects.
 
-#### Coding Café: Basic Unix
+#### Coding Café: Assignment 1 ####
 
-Using the Unix shell (command line interpreter) and terminal (text input/output environment) is an important tool for file managment, automation and client-server communication. This café will introduce basic commands and shell scripting.
-
-In this coding café, we continue with the Unix shell and terminal focusing on automation and workflows.
+In this coding café, we will work on [assignment 1]().
 
 ##### Reading #####
 
@@ -63,20 +61,20 @@ In this coding café, we continue with the Unix shell and terminal focusing on a
 
 ##### Assignment 1 #####
 
-[Assignment 1](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/assignments/assign_01.md)
+* [Assignment 1](): Functions and patterns generations
 
 ---
 
 ### Lesson 4: Lists and Dictionaries ###
 
 __Time__ Monday, September 19, 0800-1000 (1200 w. café)  
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Data type is an important concept in programming. Variables store data in different types that have type-specific methods associated with them. Python have multiple built-in data types, you have used simple data types like `str`, `int`, and `float` in the previous lessons; in this lesson we look at container-like data types that can be used to store and manipulate simple data types.
 
 #### Coding Café: Basic Unix (Contd)
 
-In this coding café, we continue with the Unix shell and terminal focusing on automation and workflows.
+In this coding café, you will solve [coding challenges]() about container data structures in groups.
 
 ##### Reading ####
 
@@ -87,11 +85,13 @@ In this coding café, we continue with the Unix shell and terminal focusing on a
 ### Lesson 5: String Manipulation ####
 
 __Time__ Monday, September 26, 0800-1000 (1200 w. café)  
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 A string is a sequence of characters (character is a symbol). In Python 3, as in many other programming languages, strings, data type `str`, are arrays of bytes that represent unicode characters. In this lesson, we will look at string manipulation, which is the process of changing, parsing, splicing, pasting, or analyzing strings.
 
-#### Coding Café: Fun with Information Retrieval ####
+#### Coding Café: Assignment 2 ####
+
+In this coding café, we will work on [assignment 2]().
 
 ##### Reading #####
 
@@ -99,26 +99,23 @@ A string is a sequence of characters (character is a symbol). In Python 3, as in
 
 ##### Assignment 2 #####
 
-* Assignment 2: Word Importance
+* [Assignment 2](): Word Importance
 
 ---
 
 ### Lesson 6: Formats for Representing Structured Data (CSV and JSONS)
 
 __Time__ Monday, October 3, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
-In this lesson will cover how to work with CSV files and JSON data in Python.
-CSV and JSON are data formats you most likely will encounter when doing data analysis.
-CSV data (**C**omma **S**eparated **Va**lues) is widely used for tabular data. You might have seen it when working with a spreadsheet in Microsoft Excel.
-JSON data (**J**ava**S**cript **O**bject **N**) is widely used for web applications and for communicating with servers. JSON data is structured in a nested hierarchy of key-value pairs.
+In this lesson will cover how to work with CSV files and JSON data in Python. CSV and JSON are data formats you most likely will encounter when doing data analysis. CSV data (**C**omma **S**eparated **Va**lues) is widely used for tabular data. You might have seen it when working with a spreadsheet in Microsoft Excel. JSON data (**J**ava**S**cript **O**bject **N**) is widely used for web applications and for communicating with servers. JSON data is structured in a nested hierarchy of key-value pairs.
 
 
-#### Coding Café: Horoscope Challenge
+#### Coding Café: Horoscope Challenge ###
 In this coding café we will make a Horoscope Program and use the dataset `horoscopes.csv`.
-
-
+S
 ##### Reading
+
 * Sweigart 2019, chp 16: [Working with CSV files and JSON data](https://automatetheboringstuff.com/2e/chapter16/)
 
 
@@ -127,17 +124,18 @@ In this coding café we will make a Horoscope Program and use the dataset `horos
 ### Lesson 7: Classes and Object-Oriented Programming ###
 
 __Time__ Monday, October 10, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Object oriented programming (OOP) is a programming paradigm used to structure a program into bundles of related properties and behaviors into individual objects. Python classes provide all the standard features of OOP (inheritance mechanism, derived classes that override methods of base class, method call of base class). This lesson will teach you how to use OOP in Python to write a strategic code base that can be used and re-used across multiple projects.
 
-#### Coding Café: Fun with OOP  ####
+#### Coding Café: Modelling challenges ####
 
+In this coding café, you will solve [modelling challenges]() about OOP in groups.
 
 
 ##### Reading
 
-* Phillips 2015, chp 1, [Object-oriented Design](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/reading/Phillipos-2015-OOP-01.pdf)
+* Phillips 2015, chp 1, [Object-oriented Design]()
 
 
 ---
@@ -145,11 +143,13 @@ Object oriented programming (OOP) is a programming paradigm used to structure a 
 ### Lesson 8: Classes and Object-Oriented Programming ###
 
 __Time__ Monday, October 24, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Object oriented programming (OOP) is a programming paradigm used to structure a program into bundles of related properties and behaviors into individual objects. Python classes provide all the standard features of OOP (inheritance mechanism, derived classes that override methods of base class, method call of base class). This lesson will teach you how to use OOP in Python to write a strategic code base that can be used and re-used across multiple projects.
 
-#### Coding Café: Fun with Classes and OOP
+#### Coding Café: Assignment 3
+
+In this coding café, we will work on [assignment 3]().
 
 ##### Reading
 
@@ -157,18 +157,21 @@ Object oriented programming (OOP) is a programming paradigm used to structure a 
 
 ##### Assignment 3 #####
 
-* Class design and implementation
+* [Assignment 3](): Class design and implementation
 
 ---
 
 ### Lesson 9: Web Scraping
 
 __Time__ Monday, October 31, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
+TBA
 #### Coding Café
 
+TBA
 ##### Reading
+
 * Sweigart 2019, chp 12: [Web Scraping](https://automatetheboringstuff.com/2e/chapter12/)
 
 ---
@@ -176,16 +179,16 @@ __Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-
 ### Lesson 10: Information Visualization
 
 __Time__ Monday, November 7, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
-Exploration and communication of data through a visual medium is an essential tool of research. This lesson will focus on the use of `matplotlib` to efficiently explore and communicate research results. `Matplotlib` is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+Exploration and communication of data through a visual medium is an essential tool of research. This lesson will focus on the use of `matplotlib` and `seaborn` to efficiently explore and communicate research results. `Matplotlib` is a comprehensive library for creating static, animated, and interactive visualizations in Python. `Seaborn` is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
-#### Coding Café
+#### Coding Café: Assignment 4
 
-Work on assignment 4 in groups.
+In this coding café, we will work on [assignment 4]().
 ##### Reading #####
 
-Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). [Ten Simple Rules for Better Figures](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/raw/main/reading/Rougier-2014-Ten-Simple-Rules.pdf). PLoS Computational Biology, 10(9), e1003833.
+Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). [Ten Simple Rules for Better Figures](). PLoS Computational Biology, 10(9), e1003833.
 
 ###### Suggested reading ######
 
@@ -193,14 +196,14 @@ Tufte, & R, E. (2001). The Visual Display of Quantitative Information (2nd editi
 
 #### Assignment 4 ####
 
-* Time Series Visualization with `Matplotlib`
+* [Assignment 4](): Data visualization of _The World Happiness Report_
 
 ---
 
 ### Lesson 11: Just a Machine the Learns - Introduction to Machine Learning and AI ###
 
 __Time__ Monday, November 14 , 0800-1000 (1200 w. café)   
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Machine learning is an approach to programming that use data and learning systems to train algorithms (instead of specifying discrete steps in a programming space). This lesson is predominantly theoretical and will explain learning methods in machine learning as well as challenges such as black-box models and parity issues.
 
@@ -214,41 +217,43 @@ Read either the conceptual or formal introduction, and read the bias in AI:
 
 __Conceptual Introduction__
 
-Nielbo, K. L., Nichols, R., & Slingerland, E. (2017). [Mining the Past – Data-Intensive Knowledge Discovery in the Study of Historical Textual Traditions](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/reading/Nielbo-2017-Mining-the-Pase.pdf). Journal of Cognitive Historiography, 3(1–2), 93–118. 
+Nielbo, K. L., Nichols, R., & Slingerland, E. (2017). [Mining the Past – Data-Intensive Knowledge Discovery in the Study of Historical Textual Traditions](). Journal of Cognitive Historiography, 3(1–2), 93–118. 
 
 __Formal Introduction__
 
-Raschka, S. (2017). [Naive Bayes and Text Classification I - Introduction and Theory](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/reading/Raschka-2017-Naive-Bayes-and-Text-Classification.pdf). ArXiv:1410.5329 [Cs].
+Raschka, S. (2017). [Naive Bayes and Text Classification I - Introduction and Theory](). ArXiv:1410.5329 [Cs].
 
 __Bias in AI__
 
-Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing). ProPublica.
+Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](). ProPublica.
 
 ---
 
 ### Lesson 12: Supervised Machine Learning 1 ###
 
 __Time__ Monday, November 21, 0800-1000 (1200 w. café)
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
-#### Coding Café
+#### Coding Café: Assignment 5
+
+In this coding café, we will work on [assignment 5]().
 
 ##### Reading #####
 
 #### Assignment 5 ####
 
-* Horoscope classification
+* [assignment 5](): Horoscopes and Happiness classification
 
 ---
 
 ### Lesson 13: Supervised Machine Learning ###
 
 __Time__ Monday, November 28, 0800-1000
-__Location__ room 224 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
+__Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
 
-Feedback on individual assignment
+Discussion of individual assignment
 
 ##### Reading
 
