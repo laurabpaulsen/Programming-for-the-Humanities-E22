@@ -53,7 +53,7 @@ Functions are bundles of organized and reusable code that run when called and re
 
 #### Coding Café: Assignment 1 ####
 
-In this coding café, we will work on [assignment 1]().
+In this coding café, we will work on [assignment 1]() 
 
 ##### Reading #####
 
@@ -61,7 +61,7 @@ In this coding café, we will work on [assignment 1]().
 
 ##### Assignment 1 #####
 
-* [Assignment 1](): Functions and patterns generations
+* [Assignment 1](): Pattern Generation, Authorization Test, and Sequence Generation
 
 ---
 
