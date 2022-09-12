@@ -51,4 +51,4 @@ __Task__: Write a script that uses at least one function to accept user input of
 
 ## 3. Sequence generation ##
 
-__Task__: Write a script that uses at least one function that when it takes `15` as an argument, it generates this sequence '0010102030508013021034055089014402330377'. The solution should be _scalable_
+__Task__: Write a script that uses at least one function that when it takes `15` as an argument, it generates this sequence '0010102030508013021034055089014402330377'. The solution must be _scalable_ to the set of all positive integers.
