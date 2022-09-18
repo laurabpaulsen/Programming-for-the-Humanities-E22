@@ -74,7 +74,7 @@ Data type is an important concept in programming. Variables store data in differ
 
 #### Coding Café: Coding Challenges
 
-In this coding café, you will solve [coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_04.md) about container data structures in groups. In case you want to test your knowledge of functions and modular programming you can try this [additional coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_03.md)
+In this coding café, you will solve [coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_04.md) about container data structures in groups. In case you want to test your knowledge of functions and modular programming you can try these [additional coding challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_03.md)
 
 ##### Reading ####
 
