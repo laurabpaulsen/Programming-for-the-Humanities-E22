@@ -1,4 +1,4 @@
-# Functions in Python #
+# Lesson 3: Functions in Python #
 
 A function is a block of statements (a 'bundle of code') that (should) perform one specific task. Bundling your code as functions modularize your program into smaller chunks. As such functions make your code more organized and easier to re-use.
 
