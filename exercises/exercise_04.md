@@ -140,7 +140,7 @@ _Answer_
 3. For the following three questions, let’s say spam contains the list `['a', 'b', 'c', 'd']`.
 
 <details>
-  <summary> 3.1. What does <code>spam[int(int('3' * 2)` // 11)]</code> evaluate to?</summary>
+  <summary> 3.1. What does <code>spam[int(int('3' * 2) // 11)]</code> evaluate to?</summary>
 
 _Answer_
 
