@@ -135,7 +135,7 @@ In this coding café, you will solve [modelling challenges]() about OOP in group
 
 ##### Reading
 
-* Phillips 2015, chp 1, [Object-oriented Design]()
+* Phillips 2015, chp 1, [Object-oriented Design](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/reading/Phillipos-2015-OOP-01.pdf)
 
 
 ---
@@ -153,7 +153,7 @@ In this coding café, we will work on [assignment 3]().
 
 ##### Reading
 
-* Phillips 2015, chp 2, [Objects in Python](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E21/blob/main/reading/Phillipos-2015-OOP-02.pdf)
+* Phillips 2015, chp 2, [Objects in Python](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/reading/Phillipos-2015-OOP-02.pdf)
 
 ##### Assignment 3 #####
 
@@ -188,7 +188,7 @@ Exploration and communication of data through a visual medium is an essential to
 In this coding café, we will work on [assignment 4]().
 ##### Reading #####
 
-Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). [Ten Simple Rules for Better Figures](). PLoS Computational Biology, 10(9), e1003833.
+Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). [Ten Simple Rules for Better Figures](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/reading/Rougier-2014-Ten-Simple-Rules.pdf). PLoS Computational Biology, 10(9), e1003833.
 
 ###### Suggested reading ######
 
@@ -207,9 +207,11 @@ __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-
 
 Machine learning is an approach to programming that use data and learning systems to train algorithms (instead of specifying discrete steps in a programming space). This lesson is predominantly theoretical and will explain learning methods in machine learning as well as challenges such as black-box models and parity issues.
 
+Try a (artificial) neural network at [TensorFlow Playground](http://playground.tensorflow.org/)
+
 #### Coding Café ####
 
-Discussion of individual assignment
+Discussion of individual assignment.
 
 ##### Reading
 
@@ -217,15 +219,15 @@ Read either the conceptual or formal introduction, and read the bias in AI:
 
 __Conceptual Introduction__
 
-Nielbo, K. L., Nichols, R., & Slingerland, E. (2017). [Mining the Past – Data-Intensive Knowledge Discovery in the Study of Historical Textual Traditions](). Journal of Cognitive Historiography, 3(1–2), 93–118. 
+Nielbo, K. L., Nichols, R., & Slingerland, E. (2017). [Mining the Past – Data-Intensive Knowledge Discovery in the Study of Historical Textual Traditions](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/reading/Nielbo-2017-Mining-the-Pase.pdf). Journal of Cognitive Historiography, 3(1–2), 93–118. 
 
 __Formal Introduction__
 
-Raschka, S. (2017). [Naive Bayes and Text Classification I - Introduction and Theory](). ArXiv:1410.5329 [Cs].
+Raschka, S. (2017). [Naive Bayes and Text Classification I - Introduction and Theory](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/reading/Raschka-2017-Naive-Bayes-and-Text-Classification.pdf). ArXiv:1410.5329 [Cs].
 
 __Bias in AI__
 
-Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](). ProPublica.
+Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing). ProPublica.
 
 ---
 
