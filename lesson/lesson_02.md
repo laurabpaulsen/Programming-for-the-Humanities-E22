@@ -1,4 +1,4 @@
-# Flow of Control with Python #
+# Lesson 2: Flow of Control with Python #
 
 ---
 
