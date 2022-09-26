@@ -33,9 +33,6 @@ def tokenizer(text, lower=True, stopword=True):
     
     return tokens
 
-
-    return text.split(' ')
-
 def word_count(text, sort = True, stopword=True):
     """ count words
     """
@@ -81,7 +78,7 @@ def main():
     data = ['TPol is smarter than the others',
         'Janeway loves to explore the stars at night',
         'The sun is shining in the sky',
-        'The night sky is full of start'
+        'The night sky is full of stars'
         ]
     for text in data:
         print(text)
