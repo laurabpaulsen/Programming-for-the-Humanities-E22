@@ -29,7 +29,7 @@ You might have worked with tables and spreadsheets in Microsoft Excel. You can r
 As a string can contain commas within it, CSV files also have escape characters to distinguish between these and those making a boundary between two cells.
 In Python, there exists a `csv` module for reading and writing tabular data in CSV format.
 
-### CVS Reader
+### CSV Reader
 To read data from a CSV file we first need to create a `reader` object.
 The `reader` object will iterate over the lines in the given CSV file.
 
