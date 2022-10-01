@@ -449,7 +449,7 @@ a work/life balance that supports all your needs.
 
 ### Read JSON respons from a link
 
-The webpage [https://any.ge/horoscope/](https://any.ge/horoscope/) offers daily horoscopes in JSON format. Here is a small code example which receives JSON data on the daily horoscope for libra:
+The webpage [any.ge/horoscope/](https://any.ge/horoscope/free-api) offers daily horoscopes in JSON format. Here is a small code example which receives JSON data on the daily horoscope for libra:
 
 ```py
 import json
