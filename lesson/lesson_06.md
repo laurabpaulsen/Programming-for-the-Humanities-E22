@@ -449,7 +449,7 @@ a work/life balance that supports all your needs.
 
 ### Read JSON respons from a link
 
-The webpage [http://horoscope-api.herokuapp.com/horoscope/today](http://horoscope-api.herokuapp.com/horoscope/today) offers daily horoscopes in JSON format. Here is a small code example which receives JSON data on the daily horoscope for libra:
+The webpage [https://any.ge/horoscope/](https://any.ge/horoscope/) offers daily horoscopes in JSON format. Here is a small code example which receives JSON data on the daily horoscope for libra:
 
 ```py
 import json
@@ -460,15 +460,14 @@ def getTodaysHoroscope(url_to_api):
     data_json = json.loads(response.read())
     return data_json
 
-url = "http://horoscope-api.herokuapp.com/horoscope/today/Libra"
-receivedJOSONdata = getTodaysHoroscope(url)
-df = pd.json_normalize(receivedJOSONdata)
-df.loc[0][1]
->>>
+sign = "libra"
+url = f"https://any.ge/horoscope/api/?sign={sign}&type=daily&day=today"
+receivedJSONdata = getTodaysHoroscope(url)
+print(receivedJSONdata)
+print()
+print(receivedJSONdata[0]['text'])
 
-    sign 	date 	horoscope
-0 	leo 	2021-09-02 	Keep a watchful eye on the reality of your fin...
-
+>>> [{'sign': 'libra', 'text': '<span style="font-weight: 400">It\'s okay if you need to run away with your imagination for a bit today, dear Libra, as the Sagittarius moon connects with Saturn and then Mars this morning. Meanwhile, Venus forms an opposition with glimmering Jupiter, bringing optimism to your heart and hope for a happy future. Unfortunately, all these lofty musings could remain a fantasy if you\'re unable to stay focused on the work required to actualize them, making it important that you keep one foot on the ground. Just try not to become overwhelmed by details later in the afternoon when a harsh t-square manifests in the sky.\xa0</span>', 'date': '2022-10-01', 'type': 'daily'}]
 ```
 
 ## Horoscope Challenge
