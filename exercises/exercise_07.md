@@ -2,7 +2,7 @@
 
 ```yaml
 Challenge: YOUML - You as an Object in Unified Modeling Language
-Course: Programming for the Humanities E21
+Course: Programming for the Humanities E22
 Tools: UML diagrams
 Contact: kln@cas.au.dk
 ```

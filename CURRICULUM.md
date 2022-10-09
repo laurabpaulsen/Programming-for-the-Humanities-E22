@@ -130,7 +130,7 @@ Object oriented programming (OOP) is a programming paradigm used to structure a 
 
 #### Coding Café: Modelling challenges ####
 
-In this coding café, you will solve [modelling challenges]() about OOP in groups.
+In this coding café, you will solve [modelling challenges](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/exercises/exercise_07.md) about OOP in groups.
 
 
 ##### Reading
