@@ -142,7 +142,7 @@ In this coding café, you will solve [modelling challenges](https://github.com/C
 
 ### Lesson 8: Classes and Object-Oriented Programming ###
 
-__Time__ Monday, October 24, 0800-1000 (1200 w. café)
+__Time__ Monday, October 31, 0800-1000 (1200 w. café)
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Object oriented programming (OOP) is a programming paradigm used to structure a program into bundles of related properties and behaviors into individual objects. Python classes provide all the standard features of OOP (inheritance mechanism, derived classes that override methods of base class, method call of base class). This lesson will teach you how to use OOP in Python to write a strategic code base that can be used and re-used across multiple projects.
@@ -163,7 +163,7 @@ In this coding café, we will work on [assignment 3]().
 
 ### Lesson 9: Web Scraping
 
-__Time__ Monday, October 31, 0800-1000 (1200 w. café)
+__Time__ Monday, November 7, 0800-1000 (1200 w. café)
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 TBA
@@ -178,7 +178,7 @@ TBA
 
 ### Lesson 10: Information Visualization
 
-__Time__ Monday, November 7, 0800-1000 (1200 w. café)
+__Time__ Monday, November 14, 0800-1000 (1200 w. café)
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Exploration and communication of data through a visual medium is an essential tool of research. This lesson will focus on the use of `matplotlib` and `seaborn` to efficiently explore and communicate research results. `Matplotlib` is a comprehensive library for creating static, animated, and interactive visualizations in Python. `Seaborn` is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
@@ -202,7 +202,7 @@ Tufte, & R, E. (2001). The Visual Display of Quantitative Information (2nd editi
 
 ### Lesson 11: Just a Machine the Learns - Introduction to Machine Learning and AI ###
 
-__Time__ Monday, November 14 , 0800-1000 (1200 w. café)   
+__Time__ Monday, November 21 , 0800-1000 (1200 w. café)   
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 Machine learning is an approach to programming that use data and learning systems to train algorithms (instead of specifying discrete steps in a programming space). This lesson is predominantly theoretical and will explain learning methods in machine learning as well as challenges such as black-box models and parity issues.
@@ -233,7 +233,7 @@ Mattu, J. A., Jeff Larson,Lauren Kirchner,Surya. (2016). [Machine Bias](https://
 
 ### Lesson 12: Supervised Machine Learning 1 ###
 
-__Time__ Monday, November 21, 0800-1000 (1200 w. café)
+__Time__ Monday, November 28, 0800-1000 (1200 w. café)
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café: Assignment 5
@@ -250,7 +250,7 @@ In this coding café, we will work on [assignment 5]().
 
 ### Lesson 13: Supervised Machine Learning ###
 
-__Time__ Monday, November 28, 0800-1000
+__Time__ Monday, December 3, 0800-1000
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
