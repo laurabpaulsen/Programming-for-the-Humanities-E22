@@ -2,7 +2,7 @@
 
 ## Word Count with Strings and Dictionaries ##
 
-From lesson 4, we know that dictionaries are contain key-value pairs. We can use this data type to generate a word count dictionary, but we need a method for setting a the initial count of a new word. Conveniently, dictionaries come the the `.setdefault()`, a method to set default values in dictionaries. Use the method to ensure that a key exists in a dictionary and create a word count function in `recommender.py`
+`.setdefault()` provides a method to set default values in dictionaries. Use the method to ensure that a key exists in a dictionary and create a word count function in `recommender.py`
 
 
 ```py
@@ -27,6 +27,9 @@ wordcounts = wordcounter(tokens)
 # print using pretty prting
 pprint.pprint(wordcounts)
 ```
+
+
+
 
 ## Working with Strings
 
