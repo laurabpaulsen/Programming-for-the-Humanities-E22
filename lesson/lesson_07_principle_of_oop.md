@@ -1,9 +1,9 @@
 Object-oriented or OOP we shall call it is one of several different programming paradigms used in order to structure your code in a way that is easier to follow. It receives its name by defining objects you can interface within your Python programs.
 
-Objects
+## Objects
 Objects purposely represent real-world objects or things like a cat or dog. Python objects have a collection of related properties or behaviors like meow() or bark().
 
-Classes
+## Classes
 OOP in Python is class-based and your objects will be defined with the class keyword like the example below:
 class Cat:
     pass
