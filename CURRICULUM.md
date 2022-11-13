@@ -196,7 +196,7 @@ Tufte, & R, E. (2001). The Visual Display of Quantitative Information (2nd editi
 
 #### Assignment 4 ####
 
-* [Assignment 4](): Data visualization
+* [Assignment 4](): Data visualization  
 
 ---
 
@@ -250,7 +250,7 @@ In this coding café, we will work on [assignment 5]().
 
 ### Lesson 13: Supervised Machine Learning ###
 
-__Time__ Monday, December 3, 0800-1000
+__Time__ Monday, December 5, 0800-1000
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
 
 #### Coding Café
