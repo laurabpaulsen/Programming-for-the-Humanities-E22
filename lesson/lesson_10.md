@@ -4,7 +4,7 @@
 
 * Data visulization with Python.
 * Plot simple and multiple graphs in a single figure.
-3. Use `seaborn` to make publication-ready graphs
+* Use `seaborn` to make publication-ready graphs
 
 While tabular data formats (see Lesson 3) are good for storing and manipulating heterogenous 2d data, they do not facilitate deep understanding of data. Data visualization is a powerful tool to better understand the properties of our data, it allows us to expose patterns, correlations, and trends that cannot be obtained when data is in a table or dataframe, or, as the mathematician Richard Hamming once said, 'the purpose of computing is insight, not numbers,' and data visualization is one of the best ways to develop that insight. With Python we can use several data visualization modules (ex. `matplotlib`, `seaborn`, `plotly`, `bokeh`) to create complex visualizations both for data understanding and communication.
 
