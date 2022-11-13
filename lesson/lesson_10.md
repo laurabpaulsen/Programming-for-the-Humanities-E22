@@ -8,30 +8,88 @@
 
 While tabular data formats (see Lesson 3) are good for storing and manipulating heterogenous 2d data, they do not facilitate deep understanding of data. Data visualization is a powerful tool to better understand the properties of our data, it allows us to expose patterns, correlations, and trends that cannot be obtained when data is in a table or dataframe, or, as the mathematician Richard Hamming once said, 'the purpose of computing is insight, not numbers,' and data visualization is one of the best ways to develop that insight. With Python we can use several data visualization modules (ex. `matplotlib`, `seaborn`, `plotly`, `bokeh`) to create complex visualizations both for data understanding and communication.
 
-## Lesson 4.1: Data visulization with Python and `matplotlib` ##
+## Ten Rules of Visualization ##
 
-[source](https://swcarpentry.github.io/python-novice-inflammation/03-matplotlib/index.html)
+1. Know your Audience
+2. Identify your Message
+3. Adapt the Figure to the Support Medium
+4. Captions are not optional
+5. Do not Trust the Defaults
+6. Use Color Effectively
+7. Do not Mislead the Reader
+8. Avoid 'chartjunk'
+9. Message Trumps Beauty
+10. Get the Right Tool
 
-In this lesson we will use `numpy` arrays, in case you need a refresher see [lesson 3.2](link-here).
+
+For more examples of the ten rules, See Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten Simple Rules for Better Figures. PLoS Computational Biology, 10(9), e1003833. https://doi.org/10.1371/journal.pcbi.1003833
+
+### Data-Ink Ratio ###
+
+<img src="https://render.githubusercontent.com/render/math?math=\text{Data-Ink Ratio}=\Large\frac{\text{Data-Ink}}{\text{Total ink used to print the graphic}}">
+
+
+The Data-Ink ratio is a concept introduced by [_Edward Tufte_](https://www.edwardtufte.com/tufte/), the expert whose work has contributed significantly to designing effective data presentations. In his 1983 book, 'The Visual Display of Quantitative Data', he stated the goal:
+
+"Above all else show the data"
+(Tufte, 1983)
+
+"A large share of ink on a graphic should present data-information, the ink changing as the data change. Data-ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented."
+(Tufte, 1983)
+
+Tufte refers to data-ink as the non-erasable ink used for the presentation of data. If data-ink would be removed from the image, the graphic would lose the content. Non-Data-Ink is accordingly the ink that does not transport the information but it is used for scales, labels and edges. The data-ink ratio is the proportion of Ink that is used to present actual data compared to the total amount of ink (or pixels) used in the entire display. (Ratio of Data-Ink to non-Data-Ink).
+
+## Data visualization with Python and `matplotlib` ##
 
 Python does not have an official plotting library, but if there was one, it would be `matplotlib`. `matplotlib` is a comprehensive library for creating static, animated, and interactive visualizations in Python. [Here](https://matplotlib.org/cheatsheets/_images/cheatsheets-1.png) is an excellent cheat sheet for `matplotlib` in case your rote learning resources are getting depleted.
 
-### Visualizing data
+### Read and visualize series data ###
 
-Start by reading data
+Start by maling a `series_visualization.py` file and read one of the tabular files from `data/` as a `numpy` array.
 
 ```py
 import numpy
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+
+data = np.loadtxt(fname='data/series-01.csv', delimiter=',')
 ```
 
-Let us start by visualizing the matrix as a 'heatmap' with `imshow()` from `matplotlib.pyplot`. `imshow()`  is used to display data as an image, i.e,. on a 2D regular raster.
+And run the script in interactive mode, inspect the data and check the dimensions
 
+```sh
+$ python -i series_visualization.py
+>>> data
+array([[0., 0., 1., ..., 3., 0., 0.],
+       [0., 1., 2., ..., 1., 0., 1.],
+       [0., 1., 1., ..., 2., 1., 1.],
+       ...,
+       [0., 1., 1., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 0., 2., 0.],
+       [0., 0., 1., ..., 1., 1., 0.]])
+>>> data.shape
+(60, 40)
+```
+
+We see that the array has 60 objects measured on 40 variables. In this case each object is a person and each variable is a persons' inflammation rate (over 40 days). In other words, we have a inflammation rate time series and each variable (columns) represent the rate of inflammation at a given day. 
+
+#### Visual inspection of a numpy array ####
+
+Add simple array visualization to `series_visualization.py` and save the files to your `figures` subdirectory.
 
 ```py
-import matplotlib.pyplot
-image = matplotlib.pyplot.imshow(data)
-matplotlib.pyplot.show()
+import matplotlib.pyplot as plt
+image = plt.imshow(data)
+plt.savefig('figures/my_array.png')
+plt.close()
+```
+
+And execute. Now you can open you `my_array.png` file and you can inpect the matplotlib object
+
+
+```sh
+$ python -i series_visualization.py 
+>>> image
+<matplotlib.image.AxesImage object at 0x7f836fc249b0>
+>>> dir(image)
 ```
 
 | <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/inflammation-01-imshow.svg" alt="heatmap" width="800"/> |
@@ -42,73 +100,127 @@ matplotlib.pyplot.show()
 * it takes around 3 weeks for the medication to take effect and begin reducing flare-ups
 * and flare-ups appear to drop to zero by the end of the clinical trial.
 
-Plot the average inflammation rate over time
+Blue pixels in this figure (heat map) represent low values, while yellow pixels represent high values. As you can see, each object (rows) rises and falls over a 40 time unit period (columns).
+
+Let us plot the average intensity pr. time unit.
 
 ```py
-ave_inflammation = numpy.mean(data, axis = 0)
-ave_plot = matplotlib.pyplot.plot(ave_inflammation)
-matplotlib.pyplot.show()
+ave_value = np.mean(data, axis = 0)
+ave_plot = plt.plot(ave_value)
+plt.savefig('figures/ave_value.png')
+plt.close()
 ```
 
-We generated a plot of the average inflammation pr. day across all patients in the variable `ave_inflammation`, then used `matplotlib.pyplot` to create a line graph of those values. The result shows a linear rise and fall. We should however check other statistics than the average of a dataset.
+Here we use the `plot()` function, which plots y versus x as lines and/or markers. Since we only supply one array, `plot()` assumes it is the _y_ or second axis variable.
 
-Plot the maximum inflammation rate over time
+Q: What happens if you do not close the figure?
+
+For more information about `plot()` see [Pyplot tutorial](https://matplotlib.org/stable/tutorials/introductory/pyplot.html).
+
+
+We can continue to calculate and blot descriptive statistics of our data set. Let us start with the maximum daily values - this time a little less verbose.
 
 ```py
-max_plot = matplotlib.pyplot.plot(numpy.max(data, axis=0))
-matplotlib.pyplot.show()
+max_plot = plt.plot(np.max(data, axis = 0))
+plt.savefig('figures/max_value.png')
+plt.close()
 ```
 
-and the minimum
+And then the minimum daily values.
 
 ```py
-min_plot = matplotlib.pyplot.plot(numpy.min(data, axis=0))
-matplotlib.pyplot.show()
+max_plot = plt.plot(np.min(data, axis = 0))
+plt.savefig('figures/min_value.png')
+plt.close()
 ```
 
-The maximum value rises and falls linearly, while the minimum seems to be a step function. Neither trend seems particularly likely, so either there’s a mistake in our calculations or something is wrong with our data. This insight would have been difficult to reach by examining the numbers themselves without visualization tools.
+### Grouping plots ###
 
-#### Grouping plots ####
+`Matplotlib` allows you to group multiple plots in a single figure using subplots. Using `figure()` you can create a canvas to 'draw' your individual plot on. The parameter `figsize` sets the size of the canvas in following the pattern `(width, height)` in inches. We are going to add three plots side by side, so approximately a 3/1 ratio (with an extra inch for y-axis labels). The method `add_subplot()` allow us to add plots to the canvas, it takes three parameters `(nrows, ncols, index)`. We write each subplot to axes variables (`axes1`, `axes2`, `axes3`). With each subplot created, we can modify plot and axis properties using the axes variables. 
 
-You can group similar plots in a single figure using subplots. This script below uses a number of new commands. The function `matplotlib.pyplot.figure()` creates a space into which we will place all of our plots. The parameter `figsize` tells Python how big to make this space. Each subplot is placed into the figure using its `add_subplot` method. The `add_subplot` method takes 3 parameters. The first denotes how many total rows of subplots there are, the second parameter refers to the total number of subplot columns, and the final parameter denotes which subplot your variable is referencing (left-to-right, top-to-bottom). Each subplot is stored in a different variable (`axes1`, `axes2`, `axes3`). Once a subplot is created, the axes can be titled using the `set_xlabel()` command (or `set_ylabel()`). Here are our three plots side by side:
+Create a new file `group_plots.py` and add.
 
 ```py
-import numpy
-import matplotlib.pyplot
+import numpy as np
+import matplotlib.pyplot as plt
 
-data = numpy.loadtxt(fname = 'inflammation-01.csv', delimiter = ',')
+data = np.loadtxt(fname='data/series-01.csv', delimiter=',')
 
-fig = matplotlib.pyplot.figure(figsize = (10.0, 3.0))
+fig = plt.figure(figsize=(10.0, 3.0))
 
 axes1 = fig.add_subplot(1, 3, 1)
 axes2 = fig.add_subplot(1, 3, 2)
 axes3 = fig.add_subplot(1, 3, 3)
 
 axes1.set_ylabel('average')
-axes1.plot(numpy.mean(data, axis = 0))
+axes1.plot(np.mean(data, axis=0))
 
 axes2.set_ylabel('max')
-axes2.plot(numpy.max(data, axis = 0))
+axes2.plot(np.max(data, axis=0))
 
 axes3.set_ylabel('min')
-axes3.plot(numpy.min(data, axis = 0))
+axes3.plot(np.min(data, axis=0))
 
 fig.tight_layout()
 
-matplotlib.pyplot.savefig('inflammation.png')
-matplotlib.pyplot.show()
+plt.savefig('figures/group_plots.png')
+plt.close()
 ```
 
-The call to `loadtxt` reads our data, and the rest of the program tells the plotting library how large we want the figure to be, that we’re creating three subplots, what to draw for each one, and that we want a tight layout. (If we leave out that call to `fig.tight_layout()`, the graphs will actually be squeezed together more closely.)
+### Visualize multiple files ###
 
-The call to `savefig` stores the plot as a graphics file. This can be a convenient way to store your plots for use in other documents, web pages etc. The graphics format is automatically determined by Matplotlib from the file name ending we specify; here PNG from 'inflammation.png'. Matplotlib supports many different graphics formats, including SVG, PDF, and JPEG.
+We can use the `glob` library to find all files in a directory that match a pattern.
 
-> **_Importing libraries with shortcuts:_** In this lesson we use the `import matplotlib.pyplot` syntax to import the pyplot module of `matplotlib`. However, shortcuts such as `import matplotlib.pyplot as plt` are frequently used. Importing pyplot this way means that after the initial import, rather than writing `matplotlib.pyplot.plot(...)`, you can now write `plt.plot(...)`. Another common convention is to use the shortcut `import numpy as np` when importing the NumPy library. We then can write `np.loadtxt(...)` instead of `numpy.loadtxt(...)`, for example. Some people prefer these shortcuts as it is quicker to type and results in shorter lines of code - especially for libraries with long names! You will frequently see Python code online using a pyplot function with plt, or a NumPy function with np, and it's because they've used this shortcut. It makes no difference which approach you choose to take, but you must be consistent as if you use `import matplotlib.pyplot as plt` then `matplotlib.pyplot.plot(...)` will not work, and you must use `plt.plot(...)` instead. Because of this, when working with other people it is important you agree on how libraries are imported.
+```sh
+$ python
+>>> import glob
+>>> print(glob.glob('data/series*.csv'))
+['data/series-02.csv', 'data/series-07.csv', 'data/series-11.csv', 'data/series-10.csv', 'data/series-12.csv', 'data/series-03.csv', 'data/series-04.csv', 'data/series-09.csv', 'data/series-06.csv', 'data/series-08.csv', 'data/series-05.csv', 'data/series-01.csv']
+```
 
-## Lesson 4.2: Data Visualiation with `seaborn` ##
-[source](https://www.kaggle.com/code/xinyiye123/data-visualization-with-matplotlib-and-seaborn)
+Let us combine a `glob` statement with a `for` loop to visualize multiple files. 
 
-In this lesson, we explore the Spotify data set from [lesson 3](link-here).
+Create a new file `multiple_plots.py`
+
+```py
+import glob
+import numpy as np
+import matplotlib.pyplot as plt
+
+filenames = sorted(glob.glob('data/series*.csv'))
+filenames = filenames[0:3]# we only run over three files for efficiency
+for filename in filenames:
+    print(f'Building plot of {filename}') 
+
+    data = np.loadtxt(fname=filename, delimiter=',')
+
+    fig = plt.figure(figsize=(10.0, 3.0))
+
+    axes1 = fig.add_subplot(1, 3, 1)
+    axes2 = fig.add_subplot(1, 3, 2)
+    axes3 = fig.add_subplot(1, 3, 3)
+
+    axes1.set_ylabel('average')
+    axes1.plot(np.mean(data, axis=0))
+
+    axes2.set_ylabel('max')
+    axes2.plot(np.max(data, axis=0))
+
+    axes3.set_ylabel('min')
+    axes3.plot(np.min(data, axis=0))
+
+    fig.tight_layout()
+    
+    figurename = f"figures/{filename.split('/')[-1].split('.')[0]}.png"
+    print(f'Storing plot as {figurename}\n---')
+
+    plt.savefig(figurename)
+    plt.close()
+```
+
+## Data Visualiation with `seaborn` ##
+
+In this lesson, we explore the [Spotify data setlesson 3](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/dat/spotify_2017.dat).
 
 Start by reading the data into a dataframe with `pandas`
 
