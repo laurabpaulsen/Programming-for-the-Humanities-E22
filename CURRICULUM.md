@@ -176,7 +176,7 @@ TBA
 
 ---
 
-### Lesson 10: Information Visualization
+### Lesson 10: Data Visualization
 
 __Time__ Monday, November 14, 0800-1000 (1200 w. café)
 __Location__ room 244 in building [1483](https://www.au.dk/om/organisation/find-au/bygningskort/?b=1483).
@@ -196,7 +196,7 @@ Tufte, & R, E. (2001). The Visual Display of Quantitative Information (2nd editi
 
 #### Assignment 4 ####
 
-* [Assignment 4](): Data visualization of _The World Happiness Report_
+* [Assignment 4](): Data visualization
 
 ---
 
