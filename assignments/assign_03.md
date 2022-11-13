@@ -18,7 +18,7 @@ Again, two options a) text report in pdf accompanied by Python scripts OR b) mar
 
 ## Problem 1: Object-Oriented Design ##
 
-This problem in not about code, but about designing templates that can be turned into code. Your task is to design several classes that can instantiate you in a particular user context of, for instance, a community ('Bouldering Club'), a business (e.g. 'Bookstore'), or a profession (e.g., 'BA Student'). Use UML-inspired diagrams to design your object template(s), box-and-pointer diagrams are sufficient.
+This problem in not about code, but about designing templates that can be turned into code. Your task is to design several classes that can instantiate you (or a set of object relevant to you) in a particular user context of, for instance, a community ('Bouldering Club'), a business (e.g. 'Bookstore'), or a profession (e.g., 'BA Student'). Use UML-inspired diagrams to design your object template(s), box-and-pointer diagrams are sufficient.
 
 We define an object as a _collection of data and associated behaviors_ and use dependency relations between types of objects (i.e., classes) to model complex objects. In Python _data_ is implemented as _attributes_ and _behavior_ as _methods_.
 
