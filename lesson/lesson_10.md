@@ -6,7 +6,7 @@
 * Plot simple and multiple graphs in a single figure.
 * Use `seaborn` to make publication-ready graphs
 
-While tabular data formats (see Lesson 3) are good for storing and manipulating heterogenous 2d data, they do not facilitate deep understanding of data. Data visualization is a powerful tool to better understand the properties of our data, it allows us to expose patterns, correlations, and trends that cannot be obtained when data is in a table or dataframe, or, as the mathematician Richard Hamming once said, 'the purpose of computing is insight, not numbers,' and data visualization is one of the best ways to develop that insight. With Python we can use several data visualization modules (ex. `matplotlib`, `seaborn`, `plotly`, `bokeh`) to create complex visualizations both for data understanding and communication.
+While tabular data formats are good for storing and manipulating heterogenous 2d data, they do not facilitate a deep understanding of data. Data visualization is a powerful tool to better understand the properties of our data, it allows us to expose patterns, correlations, and trends that cannot be obtained when data is in a table or dataframe, or, as the mathematician Richard Hamming once said, 'the purpose of computing is insight, not numbers,' and data visualization is one of the best ways to develop that insight. With Python we can use several data visualization modules (ex. `matplotlib`, `seaborn`, `plotly`, `bokeh`) to create complex visualizations both for data understanding and communication.
 
 ## Ten Rules of Visualization ##
 
@@ -29,7 +29,7 @@ For more examples of the ten rules, See Rougier, N. P., Droettboom, M., & Bourne
 <img src="https://render.githubusercontent.com/render/math?math=\text{Data-Ink Ratio}=\Large\frac{\text{Data-Ink}}{\text{Total ink used to print the graphic}}">
 
 
-The Data-Ink ratio is a concept introduced by [_Edward Tufte_](https://www.edwardtufte.com/tufte/), the expert whose work has contributed significantly to designing effective data presentations. In his 1983 book, 'The Visual Display of Quantitative Data', he stated the goal:
+The Data-Ink ratio is a concept introduced by [_Edward Tufte_](https://www.edwardtufte.com/tufte/), a famous American statistician whose work has contributed significantly to designing effective data presentations. In his 1983 book, 'The Visual Display of Quantitative Data', he stated the goal:
 
 "Above all else show the data"
 (Tufte, 1983)
@@ -37,7 +37,7 @@ The Data-Ink ratio is a concept introduced by [_Edward Tufte_](https://www.edwar
 "A large share of ink on a graphic should present data-information, the ink changing as the data change. Data-ink is the non-erasable core of a graphic, the non-redundant ink arranged in response to variation in the numbers represented."
 (Tufte, 1983)
 
-Tufte refers to data-ink as the non-erasable ink used for the presentation of data. If data-ink would be removed from the image, the graphic would lose the content. Non-Data-Ink is accordingly the ink that does not transport the information but it is used for scales, labels and edges. The data-ink ratio is the proportion of Ink that is used to present actual data compared to the total amount of ink (or pixels) used in the entire display. (Ratio of Data-Ink to non-Data-Ink).
+Tufte refers to data-ink as the non-erasable ink used for the presentation of data. If data-ink would be removed from the image, the graphic would lose the content. Non-Data-Ink on the other hand is the ink that does not transport information but it is used for scales, labels and edges. The data-ink ratio is the proportion of Ink that is used to present actual data compared to the total amount of ink (or pixels) used in the entire display. (Ratio of Data-Ink to non-Data-Ink).
 
 ## Data visualization with Python and `matplotlib` ##
 
@@ -45,7 +45,7 @@ Python does not have an official plotting library, but if there was one, it woul
 
 ### Read and visualize series data ###
 
-Start by maling a `series_visualization.py` file and read one of the tabular files from `data/` as a `numpy` array.
+Start by making a `series_visualization.py` file and read one of the tabular files from `data/` as a `numpy` array.
 
 ```py
 import numpy
@@ -69,7 +69,7 @@ array([[0., 0., 1., ..., 3., 0., 0.],
 (60, 40)
 ```
 
-We see that the array has 60 objects measured on 40 variables. In this case each object is a person and each variable is a persons' inflammation rate (over 40 days). In other words, we have a inflammation rate time series and each variable (columns) represent the rate of inflammation at a given day. 
+We see that the array has 60 objects measured on 40 variables. In this case each object is a person and each variable is a person's daily inflammation rate (over 40 days). In other words, we have a inflammation rate time series and each variable (columns) represent the rate of inflammation at a given day. 
 
 #### Visual inspection of a numpy array ####
 
@@ -82,7 +82,7 @@ plt.savefig('figures/my_array.png')
 plt.close()
 ```
 
-And execute. Now you can open you `my_array.png` file and you can inpect the matplotlib object
+And execute. Now you can open your `my_array.png` file and you can inpect the matplotlib object
 
 
 ```sh
@@ -95,6 +95,8 @@ $ python -i series_visualization.py
 | <img src="https://swcarpentry.github.io/python-novice-inflammation/fig/inflammation-01-imshow.svg" alt="heatmap" width="800"/> |
 |:--:|
 | *Each row in the heat map corresponds to a patient in the clinical trial dataset, and each column corresponds to a day in the dataset. Blue pixels in this heat map represent low values, while yellow pixels represent high values. As we can see, the general number of inflammation flare-ups for the patients rises and falls over a 40-day period.* |
+
+_Observe_ that
 
 * the patients take their medication once their inflammation flare-ups begin
 * it takes around 3 weeks for the medication to take effect and begin reducing flare-ups
@@ -136,9 +138,9 @@ plt.close()
 
 ### Grouping plots ###
 
-`Matplotlib` allows you to group multiple plots in a single figure using subplots. Using `figure()` you can create a canvas to 'draw' your individual plot on. The parameter `figsize` sets the size of the canvas in following the pattern `(width, height)` in inches. We are going to add three plots side by side, so approximately a 3/1 ratio (with an extra inch for y-axis labels). The method `add_subplot()` allow us to add plots to the canvas, it takes three parameters `(nrows, ncols, index)`. We write each subplot to axes variables (`axes1`, `axes2`, `axes3`). With each subplot created, we can modify plot and axis properties using the axes variables. 
+`Matplotlib` allows you to group multiple plots in a single figure using subplots. With `figure()` you can create a _canvas_ to 'draw' your individual plot on. The parameter `figsize` sets the size of the canvas following the pattern `(width, height)` in inches. We are going to add three plots side by side, so approximately a 3/1 ratio (with an extra inch for y-axis labels). The method `add_subplot()` allows us to add plots to the canvas, it takes three parameters `(nrows, ncols, index)`. We write each subplot to axes variables (`axes1`, `axes2`, `axes3`). With each subplot created, we can modify plot and axis properties using the axes variables. 
 
-Create a new file `group_plots.py` and add.
+Create a new file `group_plots.py` and add
 
 ```py
 import numpy as np
@@ -180,7 +182,7 @@ $ python
 
 Let us combine a `glob` statement with a `for` loop to visualize multiple files. 
 
-Create a new file `multiple_plots.py`
+Create a new file `multiple_plots.py` and add
 
 ```py
 import glob
@@ -218,7 +220,7 @@ for filename in filenames:
     plt.close()
 ```
 
-## Data Visualiation with `seaborn` ##
+## Data Exploration with `matplotlib` and `seaborn` ##
 
 In this lesson, we explore the [Spotify data setlesson 3](https://github.com/CHCAA-EDUX/Programming-for-the-Humanities-E22/blob/main/dat/spotify_2017.dat).
 
@@ -277,7 +279,7 @@ plt.show()
 
 It turns out people are looking for danceability and energy, and the less acoustics and live the song is, the more popular it might be.
 
-We tend to think that high tempo (> BMPs) is more upbeat, but is that actually the case. Use a scatter plot to inspect correctaions between `tempo` and upbeat attributes: `Danceability`, `Energy`, `Liveness` and `Acousticness`.
+We tend to think that high tempo (> BMP) is more upbeat, but is that actually the case. Use a scatter plot to inspect correctaions between `tempo` and upbeat attributes: `Danceability`, `Energy`, `Liveness` and `Acousticness`.
 
 > **_Scatter Plot:_** A scatter plot is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data.
 
@@ -310,6 +312,17 @@ plt.show()
 ```
 
 Suprisingly there is no correlation between those `tempo` and the upbeat attributess
+
+You can test it with a linear model, ex
+
+```py
+from numpy.polynomial.polynomial import polyfit
+x = df['tempo'].values
+y = df['danceability'].values
+b, m = polyfit(x, y, 1)
+
+axs[0].plot(x, b + m * x, 'r-')
+```
 
 Finally, we can use high-level libraries that build on `matplotlib` to create publication-ready graphs. `seaborn` is a Python data visualization library based on `matplotlib` that provides a high-level interface for drawing attractive and informative statistical graphics. In other words, `seaborn` makes it easier to create fancy graphs with `matplotlib`.
 
