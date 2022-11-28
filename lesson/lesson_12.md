@@ -49,7 +49,7 @@ from sklearn.model_selection import cross_val_score
 We start by reading and deduplicating data. _Deduplication_ refers to any technique for eliminating a dataset's redundant data (i.e., removing exacts copies).
 
 ```py
-data = pd.read_csv(args['dataset'])
+data = pd.read_csv('dat/emails.csv')
 print(f'[INFO] number of documents: {data.shape[0]}')
 data.drop_duplicates(inplace=True)
 print(f'[INFO] number of documents after dedublication: {data.shape[0]}')    
@@ -75,7 +75,7 @@ It is a fast and easy procedure to perform, the results of which allow you to co
 
 ```py
 X = cv.fit_transform(corpus.values).toarray()
-y = data.iloc[:, 1].values
+y = data['spam'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.20)
 ```
 
