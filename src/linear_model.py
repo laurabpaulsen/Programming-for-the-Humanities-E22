@@ -12,8 +12,6 @@ def standardize(X):
     """
     scaler = StandardScaler()
     scaler.fit(X)
-    #print(scaler.mean_)
-    #print(scaler.transform(X))
     return scaler.transform(X)
 
 
@@ -50,6 +48,15 @@ def main():
     # The coefficient of determination: 1 is perfect prediction
     print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
 
+    x, y = x.ravel(), y.ravel()
+    m, b = np.polyfit(x, y, 1)
+    fig = plt.figure(figsize=(4,3))
+    plt.plot(x, y, 'xg')
+    plt.plot(x, m * x + b, 'r')
+    plt.xlabel('Perceptions of corruption')
+    plt.ylabel('Ladder score')
+    plt.tight_layout()
+    plt.savefig('fig/happy_on_corrupt.png')
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
