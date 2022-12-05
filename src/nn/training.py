@@ -134,7 +134,7 @@ def main():
 
     # training
     nn = NeuralNetwork()
-    L, preds, = nn.train(X, y)
+    L, preds = nn.train(X, y)
 
     # inference
     print("\n[INFO] final loss: {}".format(L))
