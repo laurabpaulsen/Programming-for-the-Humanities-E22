@@ -10,7 +10,7 @@
 First ensure that the dependencies are installed
 
 ```sh
-$ pip install -r requirements
+$ pip install -r requirements.txt
 ```
 
 Then execute the driver
@@ -32,5 +32,6 @@ Compare top 200 most frequent words for at least three different Zodiac signs (e
 ### Problem 3: Document similarity ##
 
 Generate    from the horoscope data and extract $n$ documents, where $n > 5$. Compute the similarity between all extracted documents and, in natural langauge, explain the extrema (the similarity between the two least and two most similar documents).
+
 
 `
