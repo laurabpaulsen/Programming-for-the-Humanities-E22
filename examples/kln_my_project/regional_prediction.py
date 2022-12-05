@@ -6,6 +6,8 @@ Date: 10-10-2022
 This script trains a classifier to predict region from world happiness and related predictors
 for the problem-specification see README
 
+## 
+
 """
 # Python libraries
 import pandas as pd  # data handling
@@ -31,7 +33,7 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(
         X, 
         y, 
-        test_size=0.15, 
+        test_size=training_size, 
         random_state=23
         )
     
