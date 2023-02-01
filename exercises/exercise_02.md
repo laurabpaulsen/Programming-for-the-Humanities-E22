@@ -322,7 +322,7 @@ while True:
     print('stuck in the loop')
 ```
 
-KeyboardInterrupt: `ctrl + c` or `cmd + c`
+KeyboardInterrupt: `ctrl + c`
 
 </details>
 
