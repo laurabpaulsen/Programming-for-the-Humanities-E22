@@ -121,7 +121,7 @@ spam
 </details>
 
 <details>
-  <summary> 4: What is an expressions made up of? What fo all expressions do? </summary>
+  <summary> 4: What is an expressions made up of? What do all expressions do? </summary>
 
 * An expression is an instruction that combines values and operators and always evaluates down to a single value.
 
@@ -174,7 +174,7 @@ spock + 1
 </details>
 
 <details>
-  <summary> 9: What three functions can be used to get the integer, floating-point numner, string version of a value? </summary>
+  <summary> 9: What three functions can be used to get the integer, floating-point number, string version of a value? </summary>
 
 - `int()`
 - `float()`
